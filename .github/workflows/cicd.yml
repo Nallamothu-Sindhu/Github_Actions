@@ -17,6 +17,12 @@ jobs:
        - name: run the python script
          run: python add.py > output.txt
 
+       - name: upload frile to artifactory
+         uses: actions/upload-artifact@v4
+         with:
+           name: Output-file
+           path: output.txt
+
       
 
 
